@@ -47,11 +47,7 @@
             margin: 0 auto;
             width: 60%;
         }
-        @media (min-width: 768px) {
-            #content-block{
-                flex-direction: column;
-            }
-        }
+        
         #logo > a {
             background-image: url(logo.png);
             background-repeat: no-repeat;
@@ -84,6 +80,8 @@
             line-height: 1.5em;
         }
 
+       
+
         .grga {
             font-family: Georgia;
         }
@@ -111,10 +109,27 @@
             flex-direction: row;
             padding: 0 2em 0 0;
         }
-        #social img {
+        #social a {
+            display: block;
             flex: 1;
             width: 80px;
             height: 80px;
+        }
+        #social a img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            #social {
+                margin-bottom: 50px;
+            }
+            #content-block{
+                flex-direction: column;
+            }
+            #business-text > p {
+                padding: 0;
+            }
         }
     </style>
 </head>
@@ -131,7 +146,7 @@
                 </p>
                 <div id='social'>
                     <a href="https://www.instagram.com/_mansa/"><img src='instagram.svg'></a>
-                    <a href="https://www.twitter.com/bemansa/"><img src='twitter.svg'>
+                    <a href="https://www.twitter.com/bemansa/"><img src='twitter.svg'></a>
                     <a href="https://www.facebook.com/Mansa-Do-Business-1170991263071946/"><img src='facebook.svg'></a>
                     <a href="https://www.linkedin.com/company/bemansa/about/"><img src='linkedin.svg'></a>
                 </div>
