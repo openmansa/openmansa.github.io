@@ -120,58 +120,11 @@
             height: 100%;
         }
 
-        #business-text > p {
-    text-align: justify;
-    color: #fff;
-    font-size: 1em;
-    padding: 0 2em 0 0;
-    line-height: 1.5em;
-}
-#social a {
-    display: block;
-    flex: 1;
-    width: 42px;
-    height: 42px;
-} 
-#form-box label {
-    font-size: 1em;
-} 
-#mc_embed_signup .mc-field-group {
-    clear: left;
-    position: relative;
-    width: 96%;
-    padding-bottom: 10%;
-    min-height: 50px;
-} 
-#mc_embed_signup .mc-field-group input {
-    display: block;
-    width: 100%;
-    padding: .5em;
-    text-indent: 2%;
-    font-size: 1.5em;
-} 
-#submit-button, form input#mc-embedded-subscribe.button {
-    background-color: rgb(239, 92, 40);
-    padding: .5em 1em;
-    height: initial;
-    font-size: 1em;
-    font-weight: 700;
-} 
-#banner {
-    flex: 1;
-    text-align: center;
-    background-image: url(header.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 239px;
-    min-width: 195px;
-    background-size: contain;
-    position: relative;
-    top: 3em;
-}
-
         @media screen 
             and (max-device-width: 500px)  {
+            .hidemobile {
+                display: none;
+            }
             #social {
                 margin-bottom: 50px;
             }
@@ -192,7 +145,7 @@
         <div id='content-block'>
 
             <div id='business-text'>
-                <h1 class='azb'>IT'S TIME FOR BUSINESS TO<br/>CHANGE.</h1>
+                <h1 class='azb'>IT'S TIME FOR BUSINESS TO <span class='hidemobile'><br/></span>CHANGE.</h1>
                 <p class='grga'>
                     Business is changing. Leaders are getting younger, more diverse, and are looking for ways to create businesses that have a social impact. We are the network for those leaders. Executives, founders, entrepreneurs, and creators we are creating the media and content to take your business or career to the next level. This is business for the next generation. Follow us on social media and join our mailing list so you can be the first to get access when we launch the next phase of business media.
                 </p>
